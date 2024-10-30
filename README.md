@@ -10,13 +10,19 @@ that promotes long-term learning.
 training programs.
 • Language: JavaScript.
 • Platform: Web. (Or application)
-Project plan:
+
+
+
+Project plane:
+
 User Stories:
 - “As a user, I want to be able to complete my Lagoon training with minimal errors
 or distractions.”
 - “I want to be able to quickly and efficiently navigate through my training”
 - “I want a fun, interactive way to complete my training.”
 - “I want a clear and straightforward way to learn Lagoon’s policies.”
+
+
 Sprint Planning:
 - Sprint 1: Learning JavaScript, get basic setup complete
 o “I want to be able to complete my Lagoon Training”
