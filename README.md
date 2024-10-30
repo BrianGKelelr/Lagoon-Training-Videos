@@ -1,14 +1,20 @@
 # Lagoon-Training-Videos
 
 Project pitch:
+
 • General Idea: Series of videos for lagoon employees with questions on how to
 respond to different situations. If they pass, they will receive a certificate.
+
 • Target audience: Lagoon employees in training.
+
 • How it is different: We want to create a clean, intuitive, and memorable design
 that promotes long-term learning.
+
 • Why invest: By investing in our program, you are investing in the future of online
 training programs.
+
 • Language: JavaScript.
+
 • Platform: Web. (Or application)
 
 
