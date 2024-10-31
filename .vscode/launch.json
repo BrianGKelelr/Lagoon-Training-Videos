@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "firefox",
+        "request": "launch",
+        "name": "Launch Firefox",
+        "file": "${workspaceFolder}/sawyersTestingGround/videoTest.html",
+        "reAttach": true,
+        "pathMappings": [
+          {
+            "url": "http://localhost:8080/",
+            "path": "${workspaceFolder}"
+          }
+        ]
+      }
+    ]
+  }
