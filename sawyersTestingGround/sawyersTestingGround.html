@@ -1,0 +1,62 @@
+<!-- HTML for the test application with embedded video and multiple choice questions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Program Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .questions {
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h2>Training Video</h2>
+        <video width="600" controls>
+            <source src="path_to_your_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="questions">
+        <h2>Multiple Choice Questions</h2>
+        <div class="question">
+            <p>1. What is the main topic of the video?</p>
+            <input type="radio" id="q1a1" name="q1" value="option1">
+            <label for="q1a1">Option 1</label><br>
+            <input type="radio" id="q1a2" name="q1" value="option2">
+            <label for="q1a2">Option 2</label><br>
+            <input type="radio" id="q1a3" name="q1" value="option3">
+            <label for="q1a3">Option 3</label><br>
+            <input type="radio" id="q1a4" name="q1" value="option4">
+            <label for="q1a4">Option 4</label>
+        </div>
+        <div class="question">
+            <p>2. What is the key takeaway from the video?</p>
+            <input type="radio" id="q2a1" name="q2" value="option1">
+            <label for="q2a1">Option 1</label><br>
+            <input type="radio" id="q2a2" name="q2" value="option2">
+            <label for="q2a2">Option 2</label><br>
+            <input type="radio" id="q2a3" name="q2" value="option3">
+            <label for="q2a3">Option 3</label><br>
+            <input type="radio" id="q2a4" name="q2" value="option4">
+            <label for="q2a4">Option 4</label>
+        </div>
+        <!-- Add more questions as needed -->
+    </div>
+</body>
+</html>
