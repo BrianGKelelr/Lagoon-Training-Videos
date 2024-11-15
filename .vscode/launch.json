@@ -1,11 +1,12 @@
 {
     "version": "0.2.0",
     "configurations": [
+      
       {
         "type": "firefox",
         "request": "launch",
         "name": "Launch Firefox",
-        "file": "${workspaceFolder}/sawyersTestingGround/videoTest.html",
+        "file": "${workspaceFolder}/pages/lostChild.html",
         "reAttach": true,
         "pathMappings": [
           {
