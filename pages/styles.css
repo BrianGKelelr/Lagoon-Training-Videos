@@ -4,8 +4,8 @@ body {
 }
 .header-bar {
     width: 100%;
-    height: 200px;
-    background-color: red;
+    height: 120px;
+    background-color: rgb(173, 14, 14);
 }
 
 .video-container {
