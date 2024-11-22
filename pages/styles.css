@@ -31,5 +31,5 @@ body {
 }
 .button1:hover{
     background-color:  rgb(255, 175, 175);
-    color: white;
+    color: black;
 }
