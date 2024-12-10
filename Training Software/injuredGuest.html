@@ -1,0 +1,83 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+        <div class="quiz-container">
+            <div class="header">
+                <img src="logo-lagoon.png" class="logo" alt="logo" />
+            </div>
+            
+            <video width="500px" height="400px" controls="controls">
+                <source src="exampleVideo.mp4" type="video/mp4"/>
+                Your browser does not support this video format.
+            </video>
+            
+            <h1 class="question-text">You are approached by an injured guest. After assessing there injury, what do you do?</h1>
+            
+            <div class="options-grid">
+                <button class="option-button incorrect" data-explanation="You need to offer care to the guest" onclick="selectAnswer(this)">Write down the guest's contact information and tell your boss.</button>
+                <button class="option-button incorrect" data-explanation="An injury is not a reason to remove a guest from the park" onclick="selectAnswer(this)">Escort the guest out of the park.</button>
+                <button class="option-button correct" onclick="selectAnswer(this)">If immediate care is needed, quickly locate a handheld radio and call for help, otherwise bring them to the med unit in guest services</button>
+                <button class="option-button incorrect" data-explanation="This was the obvious joke answer. Why did you click it." onclick="selectAnswer(this)">Light a flare so that a nearby medic knows where you are.</button>
+            </div>
+            
+            <a href="guestHarassment.html" class="next-question" id="nextQuestion">Next Question →</a>
+        </div>
+    
+        <!-- Modal -->
+        <div id="explanationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="explanationText"></p>
+            </div>
+        </div>
+    
+        <script>
+        const modal = document.getElementById("explanationModal");
+        const span = document.getElementsByClassName("close")[0];
+        const explanationText = document.getElementById("explanationText");
+    
+        function selectAnswer(button) {
+            // Remove any previous selections
+            document.querySelectorAll('.option-button').forEach(btn => {
+                btn.classList.remove('selected');
+                btn.style.opacity = '0.7';
+            });
+            
+            // Highlight selected answer
+            button.classList.add('selected');
+            button.style.opacity = '1';
+            
+            // If correct answer is selected, show next question link
+            if (button.classList.contains('correct')) {
+                document.getElementById('nextQuestion').style.display = 'inline-block';
+            } else {
+                document.getElementById('nextQuestion').style.display = 'none';
+                // Show explanation modal for incorrect answers
+                explanationText.textContent = button.getAttribute('data-explanation');
+                modal.style.display = "block";
+            }
+        }
+        
+        // Add hover effect
+        document.querySelectorAll('.option-button').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.transform = 'scale(1.02)';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+    
+        // Modal close button
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // Click outside modal to close
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    </body>
+</html>
