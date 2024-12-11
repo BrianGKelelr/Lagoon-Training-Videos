@@ -1,19 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-      
       {
-        "type": "firefox",
+        "name": "Launch Chrome",
         "request": "launch",
-        "name": "Launch Firefox",
-        "file": "${workspaceFolder}/pages/lostChild.html",
-        "reAttach": true,
-        "pathMappings": [
-          {
-            "url": "http://localhost:8080/",
-            "path": "${workspaceFolder}"
-          }
-        ]
-      }
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+      },
+      
     ]
-  }
+}
