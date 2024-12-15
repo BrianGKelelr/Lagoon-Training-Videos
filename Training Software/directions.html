@@ -5,21 +5,18 @@
                 <img src="logo-lagoon.png" class="logo" alt="logo" />
             </div>
             
-            <video width="500px" height="400px" controls="controls">
-                <source src="exampleVideo.mp4" type="video/mp4"/> <!-- VIDEO LINK GOES HERE -->
-                Your browser does not support this video format.
-            </video>
+            <img src = "images/IMG_8223.jpeg" class = "question-image" alt = "Guest Directions"/> 
             
-            <h1 class="question-text">A guest asks for directions to the nearest restroom, what do you do?</h1>
+            <h1 class="question-text">A guest asks for directions, what do you do?</h1>
             
             <div class="options-grid">
                 <button class="option-button incorrect" data-explanation="You are responsible for helping the guest find what they are looking for." onclick="selectAnswer(this)">Tell them to check a map.</button>
-                <button class="option-button incorrect" data-explanation="That's gross, do not. DO NOT." onclick="selectAnswer(this)">Whisper the location in the guests ear so no one else knows.</button>
-                <button class="option-button correct" onclick="selectAnswer(this)">Always remember locations of common areas (restroom restrooms and such), and lead the guest there.</button>
+                <button class="option-button incorrect" data-explanation="Lagoon can be big and confusing to new guests, you should offer assistance." onclick="selectAnswer(this)">Tell the guest to start walking and they'll figure out the park's layout on their own.</button>
+                <button class="option-button correct" onclick="selectAnswer(this)">Find a map, or offer to walk them to their destination.</button>
                 <button class="option-button incorrect" data-explanation="Do not initiate contact without consent." onclick="selectAnswer(this)">Grab the guest's hand and lead them.</button>
             </div>
             
-            <a href="rude.html" class="next-question" id="nextQuestion">Next Question →</a>
+            <a href="lostItem.html" class="next-question" id="nextQuestion">Next Question →</a>
         </div>
     
         <!-- Modal -->
